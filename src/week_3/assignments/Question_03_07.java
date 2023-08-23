@@ -1,12 +1,13 @@
-package week_2.assignments;
+package week_3.assignments;
 
 import java.util.*;
 
-public class Question_02_22 {
+public class Question_03_07 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter an amount as integer, for example 1156 for $11,56");
-        int amount = input.nextInt();
+        System.out.println("Enter the amount (e.g 11,56):");
+        double amount = input.nextDouble();
+        amount = (int) (amount * 100);
 
         int dollars = (int) (amount / 100);
         System.out.println(dollars + " dollars");
@@ -24,3 +25,4 @@ public class Question_02_22 {
         System.out.println(pennies + " pennies");
     }
 }
+

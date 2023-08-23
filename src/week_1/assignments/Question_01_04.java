@@ -1,7 +1,7 @@
 package week_1.assignments;
 
 public class Question_01_04 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("a   a^2   a^3");
         System.out.println("1    1      1");
         System.out.println("2    4      8");

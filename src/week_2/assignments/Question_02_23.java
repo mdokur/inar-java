@@ -1,7 +1,9 @@
 package week_2.assignments;
+
 import java.util.*;
+
 public class Question_02_23 {
-    public static void main (String [] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the driving distance in miles:");
         double drivingDistance = input.nextDouble();
@@ -11,6 +13,6 @@ public class Question_02_23 {
         double pricePerGallon = input.nextDouble();
 
         double costOfDriving = drivingDistance / milesPerGallon * pricePerGallon;
-        System.out.println("The cost of driving is $" + (int)(costOfDriving * 100)/100.0);
+        System.out.println("The cost of driving is $" + (int) (costOfDriving * 100) / 100.0);
     }
 }
