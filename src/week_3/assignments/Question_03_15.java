@@ -29,17 +29,15 @@ public class Question_03_15 {
                 || digit3OfLotteryNumber == digit2OfNumber
                 || digit3OfLotteryNumber == digit3OfNumber)) {
             System.out.println("Matched all number but in wrong order! $3,000 Prize ");
-        } else if (digit1OfLotteryNumber == digit1OfNumber
-                || digit1OfLotteryNumber == digit2OfNumber
-                || digit1OfLotteryNumber == digit3OfNumber) {
-            System.out.println("Matched one number!!! $1,000 Prize!!!");
-        } else if (digit2OfLotteryNumber == digit1OfNumber
-                || digit2OfLotteryNumber == digit2OfNumber
-                || digit2OfLotteryNumber == digit3OfNumber) {
-            System.out.println("Matched one number!!! $1,000 Prize!!!");
-        } else if (digit3OfLotteryNumber == digit1OfNumber
-                || digit3OfLotteryNumber == digit2OfNumber
-                || digit3OfLotteryNumber == digit3OfNumber) {
+        } else if ((digit1OfLotteryNumber == digit1OfNumber)
+                || (digit1OfLotteryNumber == digit2OfNumber)
+                || (digit1OfLotteryNumber == digit3OfNumber)
+                || (digit2OfLotteryNumber == digit1OfNumber)
+                || (digit2OfLotteryNumber == digit2OfNumber)
+                || (digit2OfLotteryNumber == digit3OfNumber)
+                || (digit3OfLotteryNumber == digit1OfNumber)
+                || (digit3OfLotteryNumber == digit2OfNumber)
+                || (digit3OfLotteryNumber == digit3OfNumber)) {
             System.out.println("Matched one number!!! $1,000 Prize!!!");
         } else
             System.out.println("Sorry no any match :(");
