@@ -1,8 +1,6 @@
 package week_5.assignments;
-
 import java.util.Scanner;
-
-public class Question_05_28 {
+public class Question_05_29 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean isLeapYear = false;
@@ -57,6 +55,13 @@ public class Question_05_28 {
                 case 4 -> nameOfDay = "Thursday";
                 case 5 -> nameOfDay = "Friday";
                 case 6 -> nameOfDay = "Saturday";
+            }
+            System.out.printf("%9s %d\n", nameOfMonth, year);
+            System.out.println("---------------------------------------------------");
+            for (int i = 1; i <=7 ; i++) {
+                System.out.println("Sun   Mon   Tue   Wed   Thu   Fri   Sat");
+
+
             }
             System.out.printf("%9s 1, %d is %s\n", nameOfMonth, year, nameOfDay);
         }
