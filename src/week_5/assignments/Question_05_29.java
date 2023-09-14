@@ -1,69 +1,100 @@
 package week_5.assignments;
+
 import java.util.Scanner;
+
 public class Question_05_29 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        boolean isLeapYear = false;
-
-        System.out.print("Enter year : (e.g.,2012) : ");
+        System.out.println("Enter year : ");
         int year = input.nextInt();
+        System.out.println("Enter first day of year 1 for Monday 2 for tuesday : ");
+        int firstDay = input.nextInt();
 
-        System.out.print("Enter first day of the year : ");
-        int firstDayOfYear = input.nextInt();
-
-        int dayOfMonth = 0;
-        String nameOfDay = "";
-        String nameOfMonth = "";
-
-        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
-            isLeapYear = true;
-        }
-        for (int month = 1; month <= 12; month++) {
-            switch (month) {
-                case 1 -> nameOfMonth = "January";
-                case 2 -> nameOfMonth = "February";
-                case 3 -> nameOfMonth = "March";
-                case 4 -> nameOfMonth = "April";
-                case 5 -> nameOfMonth = "May";
-                case 6 -> nameOfMonth = "June";
-                case 7 -> nameOfMonth = "July";
-                case 8 -> nameOfMonth = "August";
-                case 9 -> nameOfMonth = "September";
-                case 10 -> nameOfMonth = "October";
-                case 11 -> nameOfMonth = "November";
-                case 12 -> nameOfMonth = "December";
+        for (int i = 1; i <= 12; i++) {
+            int numberOfDayInMonth = 0;
+            // display calender header
+            switch (i) {
+                case 1:
+                    System.out.print("January");
+                    numberOfDayInMonth = 31;
+                    break;
+                case 2:
+                    System.out.print("February");
+                    numberOfDayInMonth = ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) ? 29 : 28;
+                    firstDay += 31;
+                    break;
+                case 3:
+                    System.out.print("March");
+                    numberOfDayInMonth = 31;
+                    firstDay += ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) ? 29 : 28;
+                    break;
+                case 4:
+                    numberOfDayInMonth = 30;
+                    System.out.print("April");
+                    firstDay += 31;
+                    break;
+                case 5:
+                    numberOfDayInMonth = 31;
+                    System.out.print("May");
+                    firstDay += 30;
+                    break;
+                case 6:
+                    numberOfDayInMonth = 30;
+                    System.out.print("June");
+                    firstDay += 31;
+                    break;
+                case 7:
+                    numberOfDayInMonth = 31;
+                    System.out.print("July");
+                    firstDay += 30;
+                    break;
+                case 8:
+                    numberOfDayInMonth = 31;
+                    System.out.print("August");
+                    firstDay += 31;
+                    break;
+                case 9:
+                    numberOfDayInMonth = 30;
+                    System.out.print("September");
+                    firstDay += 31;
+                    break;
+                case 10:
+                    numberOfDayInMonth = 31;
+                    System.out.print("October");
+                    firstDay += 30;
+                    break;
+                case 11:
+                    numberOfDayInMonth = 30;
+                    System.out.print("November");
+                    firstDay += 31;
+                    break;
+                case 12:
+                    numberOfDayInMonth = 31;
+                    System.out.print("December");
+                    firstDay += 30;
+                    break;
             }
-            switch (month) {
-                case 1 -> dayOfMonth = firstDayOfYear;
-                case 2 -> dayOfMonth = (dayOfMonth + 31) % 7;
-                case 3 -> dayOfMonth = (isLeapYear) ? (dayOfMonth + 29) % 7 : (dayOfMonth + 28) % 7;
-                case 4 -> dayOfMonth = (dayOfMonth + 31) % 7;
-                case 5 -> dayOfMonth = (dayOfMonth + 30) % 7;
-                case 6 -> dayOfMonth = (dayOfMonth + 31) % 7;
-                case 7 -> dayOfMonth = (dayOfMonth + 30) % 7;
-                case 8 -> dayOfMonth = (dayOfMonth + 31) % 7;
-                case 9 -> dayOfMonth = (dayOfMonth + 31) % 7;
-                case 10 -> dayOfMonth = (dayOfMonth + 30) % 7;
-                case 11 -> dayOfMonth = (dayOfMonth + 31) % 7;
-                case 12 -> dayOfMonth = (dayOfMonth + 30) % 7;
-            }
-            switch (dayOfMonth) {
-                case 0 -> nameOfDay = "Sunday";
-                case 1 -> nameOfDay = "Monday";
-                case 2 -> nameOfDay = "Tuesday";
-                case 3 -> nameOfDay = "Wednesday";
-                case 4 -> nameOfDay = "Thursday";
-                case 5 -> nameOfDay = "Friday";
-                case 6 -> nameOfDay = "Saturday";
-            }
-            System.out.printf("%9s %d\n", nameOfMonth, year);
-            System.out.println("---------------------------------------------------");
-            for (int i = 1; i <=7 ; i++) {
-                System.out.println("Sun   Mon   Tue   Wed   Thu   Fri   Sat");
+            System.out.print(", " + year);
+            System.out.println("\n--------------------------");
+            System.out.println("Sun  Mon  Tue  Wed  Thu  Fri  Sat");
 
+            // display calendar body
+            // start the calendar first day according to the first day variable
 
+            // Lets create spaces
+            for (int j = 0; j < firstDay % 7; j++) {
+                System.out.printf("%5s", "");
             }
-            System.out.printf("%9s 1, %d is %s\n", nameOfMonth, year, nameOfDay);
+
+            // start writing numbers
+            for (int j = 1; j <= numberOfDayInMonth; j++) {
+                if ((firstDay + j) % 7 == 0) {
+                    System.out.printf("%-5d\n", j);
+                } else {
+                    System.out.printf("%-5d", j);
+                }
+            }
+            System.out.println("\n");
         }
     }
 }
