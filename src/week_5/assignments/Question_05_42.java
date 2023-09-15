@@ -1,6 +1,6 @@
 package week_5.assignments;
 
-public class Question_05_39 {
+public class Question_05_42 {
     public static void main(String[] args) {
         double firstCommission = 5000 * 0.05;
         double secondCommission = 5000 * 0.10;
