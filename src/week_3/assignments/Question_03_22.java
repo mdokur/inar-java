@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_03_22 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter a point with two coordinates: ");
         double coordinateX = input.nextDouble();
         double coordinateY = input.nextDouble();

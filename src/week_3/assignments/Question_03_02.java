@@ -15,8 +15,7 @@ public class Question_03_02 {
         int answer = input.nextInt();
         if (number1 + number2 + number3 == answer) {
             System.out.println(number1 + " + " + number2 + " + " + number3 + " = " + answer + " is true");
-        }
-        else
+        } else
             System.out.println(number1 + " + " + number2 + " + " + number3 + " = " + answer + " is false");
     }
 }

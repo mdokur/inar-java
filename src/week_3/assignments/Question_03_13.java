@@ -6,6 +6,7 @@ public class Question_03_13 {
     public static void main(String[] args) {
         double tax = 0;
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter the filing status " +
                 "\n Press" +
                 "\n0 if you're Single filer" +

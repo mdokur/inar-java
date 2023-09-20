@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Question_04_18 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         boolean valid = true;
 
         System.out.print("Enter two characters : ");

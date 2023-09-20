@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Question_04_12 {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
         int decimalOfHexNumber = 0;
         String binaryOfHexNumber = " ";
-
-        Scanner input = new Scanner(System.in);
         System.out.print("Enter a hex digit : ");
         String stringOfHexNumber = input.nextLine();
         char charOfHexNumber = stringOfHexNumber.charAt(0);

@@ -2,9 +2,9 @@ package week_4.assignments;
 import java.util.*;
 public class Question_04_13 {
     public static void main(String[] args) {
-        char charOfletter;
-
         Scanner input = new Scanner(System.in);
+
+        char charOfletter;
         System.out.print("Enter a letter : ");
         String letter = input.nextLine();
 

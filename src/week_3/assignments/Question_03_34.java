@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Question_03_34 {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
+
         System.out.print("Enter three points for p0, p1, and p2 : ");
         double x0 = input.nextDouble();
         double y0 = input.nextDouble();

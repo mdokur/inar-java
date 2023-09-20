@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_03_19 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter three edges of the triangle: ");
         double firstEdge = input.nextDouble();
         double secondEdge = input.nextDouble();

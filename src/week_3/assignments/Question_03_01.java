@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_03_01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter a, b, and c:");
         double a = input.nextDouble();
         double b = input.nextDouble();
@@ -25,6 +26,5 @@ public class Question_03_01 {
         } else {
             System.out.println("The equation has no real roots");
         }
-
     }
 }

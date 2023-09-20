@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_03_15 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         int lotteryNumber = (int) (Math.random() * (1000 - 100)) + 100;
         int digit1OfLotteryNumber = lotteryNumber % 10;
         int digit2OfLotteryNumber = (lotteryNumber / 10) % 10;

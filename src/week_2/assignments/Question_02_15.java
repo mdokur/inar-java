@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_02_15 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter the x1 and y1:");
         double x1 = input.nextDouble();
         double y1 = input.nextDouble();

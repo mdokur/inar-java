@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_03_05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.print("Enter today's day : ");
         int numberOfToday = input.nextInt();
 

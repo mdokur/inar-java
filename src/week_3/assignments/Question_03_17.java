@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_03_17 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         int computer = (int) (Math.random() * 3);
         System.out.println("Choose one:" + "\n Scıssor (0)" + "\n Rock (1)" + "\n Paper (2)");
         int guess = input.nextInt();

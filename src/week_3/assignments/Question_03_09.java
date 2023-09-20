@@ -5,9 +5,10 @@ import java.util.*;
 public class Question_03_09 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the first 9 digits of an ISBN as integer :");
 
+        System.out.print("Enter the first 9 digits of an ISBN as integer :");
         int isbn = input.nextInt();
+
         int digit9 = isbn % 10;
         int digit8 = isbn / 10 % 10;
         int digit7 = isbn / 100 % 10;

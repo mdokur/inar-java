@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Question_03_21 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.print("Enter year: (e.g.,2012) : ");
         int year = input.nextInt();
         System.out.print("Enter month: 1-12: ");

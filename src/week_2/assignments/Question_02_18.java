@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_02_18 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter 2 numbers");
         int a = input.nextInt();
         int b = input.nextInt();

@@ -60,6 +60,5 @@ public class Question_04_03 {
         double totalArea = areaOfSavannahCharlotteAtlantaTriangle + areaOfAtlantaOrlandoSavannahTriangle;
 
         System.out.println("Estimated area enclosed by these four cities : " + totalArea);
-
     }
 }

@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_04_11 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         String intValueToString = "";
 
         System.out.print("Enter a decimal value (0-15) : ");

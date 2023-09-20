@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_02_17 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter the temperature in Fahrenheit between -58°F and 41°F:");
         double temperature = input.nextDouble();
 

@@ -5,6 +5,7 @@ import java.util.*;
 public class Question_02_13 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter the monthly saving and for how long (number of months)");
         double amount = input.nextDouble();
         int months = input.nextInt();
