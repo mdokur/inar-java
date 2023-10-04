@@ -15,11 +15,11 @@ public class Question_07_02 {
         printReverseArray(numbers);
     }
 
-    public static void printReverseArray(int[] numbers) {
+    public static void printReverseArray(int[] array) {
         int [] numberOfReverse = new int [10];
         int j = 9;
         for (int i = 0; i < 10; i++) {
-            numberOfReverse[i] = numbers[j];
+            numberOfReverse[i] = array[j];
             j--;
         }
         for (int number : numberOfReverse) {
