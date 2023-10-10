@@ -20,7 +20,8 @@ public class Question_07_14 {
         int smallestNumber = getSmallest(numbers);
         int gcd = 1;
 
-        for (int i = 2; i <= smallestNumber; i++) {
+        for (int
+             i = 2; i <= smallestNumber; i++) {
             boolean divised = true;
             for (int j = 0; j < numbers.length; j++) {
                 if (numbers[j] % i != 0) {
