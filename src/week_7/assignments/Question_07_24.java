@@ -10,7 +10,6 @@ public class Question_07_24 {
         int numberOfPicks = pick4Cards(deck, picks);
         displayDeck(picks);
         System.out.println("Number od Picks: " + numberOfPicks);
-
     }
 
     public static int pick4Cards(int[] deck, int[] pick) {
