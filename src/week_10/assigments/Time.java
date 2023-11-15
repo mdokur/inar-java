@@ -24,17 +24,20 @@ public class Time {
         minute = (int) ((elapsedTime / 60) % 60);
         hour = (int) ((elapsedTime / 3600) % 24);
     }
-    public long getHour(){
+
+    public long getHour() {
         return hour;
     }
-    public long getMinute(){
+
+    public long getMinute() {
         return minute;
     }
-    public long getSecond(){
+
+    public long getSecond() {
         return second;
     }
+
     public void setTime(long elapsedTime) {
         new Time(elapsedTime);
     }
-
 }

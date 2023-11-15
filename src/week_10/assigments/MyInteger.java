@@ -119,11 +119,11 @@ public class MyInteger {
     }
 
     public int parseInt(char[] array) {
-        String value ="";
+        String value = "";
         for (int i = 0; i < array.length; i++) {
-            value+=array[i] ;
+            value += array[i];
         }
-        int intValue= Integer.parseInt(value);
+        int intValue = Integer.parseInt(value);
         return intValue;
     }
 

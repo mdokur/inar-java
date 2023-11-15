@@ -5,7 +5,7 @@ public class Question_10_06 {
         StackOfIntegers stackOfIntegers = new StackOfIntegers();
 
 
-        for (int i = 2; i <120 ; i++) {
+        for (int i = 2; i < 120; i++) {
             if (isPrime(i)) {
                 stackOfIntegers.push(i);
             }

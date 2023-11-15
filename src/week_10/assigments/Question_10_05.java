@@ -1,5 +1,7 @@
 package week_10.assigments;
+
 import java.util.Scanner;
+
 public class Question_10_05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -9,15 +11,15 @@ public class Question_10_05 {
         int integer = input.nextInt();
         System.out.println("Increasing order: ");
 
-        int number =2;
+        int number = 2;
 
-        while(number<=integer){
-            if(integer%number == 0){
+        while (number <= integer) {
+            if (integer % number == 0) {
                 stackOfIntegers.push(number);
-                System.out.print(number+" ");
-                integer = integer/number;
+                System.out.print(number + " ");
+                integer = integer / number;
 
-            }else{
+            } else {
                 number++;
             }
 

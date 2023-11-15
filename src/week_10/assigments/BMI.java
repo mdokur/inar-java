@@ -38,7 +38,7 @@ public class BMI {
         }
     }
 
-    public void displayResult(){
+    public void displayResult() {
         System.out.println("Name : " + getName());
         System.out.println("BMI  : " + getBMIValue() + " " + getResultBMI());
     }
