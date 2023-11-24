@@ -6,7 +6,7 @@ public class Account {
     private double annualInterestRate;
     private java.util.Date dateCreated;
 
-    Account(){
+    protected Account(){
         this.id =0;
         this.balance = 0;
         this.annualInterestRate = 0;
