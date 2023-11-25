@@ -2,7 +2,7 @@ package week_11.assigments;
 
 import java.util.ArrayList;
 
-public class Account extends week_9.assigments.Account {
+public class Account extends week_09.assigments.Account {
     private String name;
     private ArrayList<Transaction> transactions = new ArrayList<>();
 

@@ -1,6 +1,6 @@
 package week_11.assigments;
 
-import week_9.assigments.Account;
+import week_09.assigments.Account;
 
 public class CheckingAccount extends Account {
     private double overdraftLimit;
